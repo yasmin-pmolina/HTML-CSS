@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Page Title</title>
+</head>
+<body>
+  <form action="resultados.html" method="GET">
+    <div>
+      <label for="nopmbredeusuario">Nombre de usuario:</label> 
+      <input name ="nopmbredeusuario"  id="nopmbredeusuario" required>
+    </div>
+    <div>
+      <!--
+          for es para asociar el label al input con el mismo id 
+          name del input es para pasarlo como argumento de salida del archivo 
+          required hace que el campo sea requerido por el formulario 
+      -->
+      <label for="password">  Contraseña:</label> 
+      <input name ="password" id="password" type="password" required>
+    </div>
+    <div>
+      <label for="edad">Edad:</label> 
+      <input type="number" name ="edad" id="edad" required min="0" minlength="0" max="150" maxlength="3">
+    </div>
+    <div>
+      <label for="date">Fecha de nacimiento:</label> 
+      <input type="date" name ="nacimiento" id="nacimiento">
+    </div>
+    <div>
+      <label for="email">Email:</label> 
+      <input type="email" name ="email"  id="email" required>
+    </div>
+    <div>
+      <textarea name="comentarios" id ="text1"></textarea>
+    </div>
+    <button type="reset">Reset</button> 
+    <button type="submit">Enviar</button>  
+  </form>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!--
+  Crea un nuevo documento HTML que cumpla los siguientes parámetros:
+  El título debe ser "Ejercicio 02 - Formularios en HTML"
+  El body debe contener un formulario que cumpla las siguientes características
+    El atributo action será "/"
+    Debe contener los siguientes campos:
+      Un campo de texto llamado "nombre"
+      Un campo numérico llamado "edad"
+      Un campo de área de texto llamado "frase-favorita"
+      Un botón de envío
+      Un botón de reset
+-->
+<html lang="en">
+<head>
+  <title>Ejercicio 02 - Formularios en HTML</title>
+</head>
+<body>
+  <div style="width:60%;  background-color: aquamarine;">
+    <form action="/" method="GET" style="display:flex; flex-direction: column;  width:100%;">
+      <div style="width: 100%; display: flex;">
+        <label for="nopmbredeusuario" style="width:50%;  margin: 0.1em; ">Nombre de usuario:</label> 
+        <input name ="nopmbredeusuario" id="nopmbredeusuario" style="width:50%; margin: 0.1em 0.1em 0.1em 0.5em;" required>
+      </div>
+      <div style="width: 100%; display: flex;">
+        <label for="edad" style="width:50%;  margin: 0.1em;" >Edad:</label> 
+        <input type="number" name ="edad" id="edad" min="0" minlength="0" max="150" maxlength="3" style="width:50%; margin: 0.1em 0.1em 0.1em 0.5em;" >
+      </div>
+      <div style="width: 100%; display: flex;">
+        <label for="frase" style="width:50%; margin: 0.1em;">frase-favorita:</label> 
+        <textarea name="frase-favorita" id ="frase-favorita" style="width:50%; margin: 0.1em 0.1em 0.1em 0.5em;"></textarea>
+      </div>
+      <div style="width: 100%; display: flex;">
+      <button type="reset" style="width:50%; padding: auto; margin: 0.1em 0.1em 0.1em 0; ">Reset</button> 
+      <button type="submit" style="width:50%;  padding: auto; margin: 0.1em 0 0.1em 0;" >Enviar</button>  
+    </div>
+    </form>
+  </div>
+</body>
+</html>
