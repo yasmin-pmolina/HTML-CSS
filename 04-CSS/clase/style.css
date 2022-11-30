@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap"
+);
+
+h1{
+  color:blue;
+}
+/**
+  Esto es un comentario
+*/
+p{
+  color:cadetblue;
+}
+
+#h1-2 {
+  color:black;
+  font-size: 14px;
+}
+
+#h1-3 {
+  color:magenta;
+  font-size: 14px;
+}
+.parrafo{
+  font-size: 12px;
+  color:black;
+}
+
+*.color-de-fondo{
+  /**Este estilo afecta a todos los que tiene clase*/
+  background-color: yellow;
+}
+
+#h1-4, .h1-5, #h1-6, span  {
+
+  color:blue;
+  font-size: 11px;
+
+}
