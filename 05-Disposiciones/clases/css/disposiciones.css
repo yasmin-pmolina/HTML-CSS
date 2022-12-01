@@ -1,0 +1,27 @@
+.div-1, .div-2{
+  background-color: red;
+  /*display: block; valor por defecto*/
+}
+
+.span-1, .span-2{
+  background-color: greenyellow;
+  display: inline-block;
+  /*display: inline; valor por defecto*/
+}
+.span-2{
+  float: left;
+  color:darkblue;
+  font-weight: bolder;
+
+  
+  /**
+    ver como mueve todo de lugar en este caso mueve los demas a la derecha 
+  */
+}
+
+.img{
+ /*display: inline-block; valor por defecto este nos pérmite modificar los tamaños altura y ancho 
+   si usamos solo el inline ignorara los valores de height enad width*/
+ width: 50px;
+ height: 50px;
+}

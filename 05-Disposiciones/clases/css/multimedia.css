@@ -1,0 +1,30 @@
+
+*{
+  /*Eliminamos el margin y el paddin que viene por defecto de todo*/
+  padding: 0;
+  margin: 0;
+}
+.imagen-principal{
+
+  width: 100vw;/*Viewport Width  100%  (ancho del dispositivo)*/
+  height: 500px;
+  opacity:0.5; /*se mide entre 0 y 1 donde 0 es totalmente transparente*/
+}
+
+/*pseudoclases :hover, :visited*/
+.imagen-principal:hover{
+ opacity: 0.75;
+}
+.imagen-galeria{
+   width: 200px
+}
+.imagen-galeria:hover{
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.galeria{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}

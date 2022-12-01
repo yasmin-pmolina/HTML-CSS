@@ -1,0 +1,33 @@
+.flex{
+  display: flex;
+  flex-direction: column; /*Por defecto es row*/
+  background-color: darkgoldenrod;
+  height: 300px;
+
+  /*justify-content: start;es como viene por defecto y los pone al principio*/
+  /*justify-content: end;/*al final del contenedor */
+  /*justify-content: space-between; Distrobuye el espacio entre los elementos*/
+  justify-content: space-around; /*Distrobuye el espacio alrededor los elementos*/
+  /*flex-wrap: wrap; /*Por defecto flex no es wrap y esto hace que por defecto se 
+  redimencionan los componentes para ajustarse al tamaño con esta propiedad no se redimencionan los objetos*/
+  /*align-items: stretch; por defecto son stretch y esto lo alonea a la altura del contenedor en funcion de lo que esta adentro*/
+  align-items: center; /*los alinea en el centro en funcion del contenido*/
+}
+.contenido-1{
+  background-color: white;
+  height: 200px;
+  width: 100px;
+  border: 1px solid blue;
+}
+.contenido-2{
+  background-color: white;
+  height: 200px;
+  width: 100px;
+  border: 1px solid blue;
+}
+.contenido-3{
+  background-color: white;
+  height: 200px;
+  width: 100px;
+  border: 1px solid blue;
+}

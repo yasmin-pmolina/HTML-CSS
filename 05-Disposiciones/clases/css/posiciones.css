@@ -1,0 +1,62 @@
+
+/**Los elementos con posicionamiento statico no se ven afectados por 
+  las modificaciones de altura o anchira 
+*/
+
+div{
+  border: 1px solid gray;
+  padding: 5px;
+  margin: 5px;
+ 
+}
+
+.header{
+  background-color: aqua;
+}
+/*
+.static{
+  valor por defecto del div y este no se ve afectado por modificadores de tamaño 
+}
+*/
+
+/*Se posiciona en relacion al posicionamiento original*/
+.relative{
+  position: relative;
+  left: 80px; /*Le esta diciendo que desde la izquierda se mueva 80px*/
+}
+
+/*Posicionamiento fijo y es en relacion a la panatalla en el siguiente 
+ejemplo le estamos diciendo que este siempre al final de la pantalla incluso con scroll
+por esta razon se usa para barra al final o inicio de las apps*/
+.fixed{
+ position: fixed;
+ bottom: 0cm;
+ background-color: darkblue;
+ color: white;
+ z-index: 10; /*Este indica si queremos que se vea por encima o debajo de otros elementos*/
+}
+
+/*Se mantiene en la posicion absluta del padre, nota que que se quede dentro del contenedor este
+debe ser posicion relative, si es por ejemplo static hara caso omiso  */
+.absolute{
+  position: absolute;
+  top: 0px;
+  background-color: darkcyan;
+}
+
+.contenedor{
+  position: relative;
+  background-color:  aquamarine;
+  width: 800px;
+  height: 500px;
+}
+
+/* Este esta genial por ejemplo para el encabezado de una tabla 
+por la posicion inicial es la que debe pero a medida que baja el scroll
+se mantiene a la vista */
+.sticky{
+  position: sticky; /*o pegajoso*/
+  background-color: darkkhaki;
+  top: 0;
+  z-index: 2;
+}
