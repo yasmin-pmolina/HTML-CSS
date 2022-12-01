@@ -1,0 +1,55 @@
+/* El id tiene mayor especificdad que  (1, 0, 0)
+   la clase y que la etiqueta
+
+   la clase tiene mayor especificidad  (0, 1, 0)
+   que la etiqueta
+
+   la etiqueta tiene especificidad     (0, 0, 0)
+
+   NOTA: si hay dos con la misma especificidad se aplica el ultimo declarado
+*/
+
+/*
+ * NOTA: cuando tenemos dos ids, debemos usar \ entre ids  (#h1-class\ h1-otroId) 
+ * NOTA: lUEGO DEL ID el . de la clase debe estar pegado para que lo tome correctamente
+ * NOTA: EL nivel mas alto es el que declara dentro de la etiqueta html, este sobreescribe los demas NIVEL 4
+ * cuando utilizados la palabra reservada "important;" este sobreescribe cualquiera de lso estilos tiene NIVEL 5 
+ */ 
+ h1#id-h1\ h1-otroId.h1-class{
+  font-size: xx-large;
+  color: deeppink;
+}
+
+#id-h1{
+  color: darkorange;
+}
+
+.h1-class{
+  color:yellow
+}
+
+#id-h1.h1-class{
+  font-size: medium;       /* (1, 1, 0)  tiene mayor especificidad que el id */
+  color: blueviolet;
+}
+
+h1#id-h1.h1-class{
+  font-size: small;         /* (1, 1, 1)  tiene mayor especificidad*/
+}
+
+
+
+
+
+/*Esto es para demostrar que el archivo css se lee de arriba a abajo*/
+h1{
+  color:red
+}
+
+h1{
+  color:green
+}
+
+p{
+  color: red;
+}

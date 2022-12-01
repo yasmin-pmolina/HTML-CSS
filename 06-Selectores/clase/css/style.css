@@ -1,0 +1,9 @@
+.contenedor p{
+  color: darkorange;
+}
+
+/*Anidacion de selectores*/
+.contenedor #button-contenedor{
+  background-color: darkorange;
+  color: white;
+}

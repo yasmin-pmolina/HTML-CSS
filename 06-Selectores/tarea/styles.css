@@ -1,0 +1,27 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.btn{
+  margin: 3px;
+  padding: 5px;
+  width: 200px;
+  height: 40px;
+}
+
+.btn::before {
+  content: 'Pasa por encima';
+}
+
+button:hover{
+  color: white;
+  background-color: green;
+}
+
+button:hover::before{
+  content: '¡Hecho!';
+}
+
+
+

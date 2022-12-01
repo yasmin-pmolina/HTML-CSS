@@ -1,0 +1,56 @@
+
+.contenedor{
+
+
+}
+
+span .frase{
+
+ font-style: italic;
+}
+
+/*Es afecta el inicio del span agregando contenido << con la letra xx-small */
+span .frase::before{
+ content: '<<';
+ font-size: xx-small;
+
+}
+/*Es afecta el final del span agregando contenido >> con la letra xx-small */
+span .frase::after{
+  content: ' >>';
+  font-size: xx-small;
+ 
+ }
+
+ .libro{
+  width: 800px;
+  height: 200px;
+  background-color: hotpink;
+  display: block;  /*con esta config es lo mismo que usaramos un div*/
+ }
+
+ /*Es afecta la primera letra del texto */
+.libro p::first-letter{
+  font-size: xx-large;
+  background-color: yellowgreen;
+ }
+
+ .libro p::first-line{
+ 
+  color: darkslategrey;
+  font-weight: bolder;
+
+ }
+
+ .libro p::selection{
+   color: darkviolet;
+   background-color: bisque;
+
+ }
+
+ .listado ul li::marker{
+  color:aqua
+ }
+ .listado ol li::marker{
+  color:deeppink
+ }
