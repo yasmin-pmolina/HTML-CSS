@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Rubik+Glitch&family=Ubuntu:ital,wght@0,300;0,400;0,700;1,300;1,500&display=swap');
+
+html {
+  font-family: 'Libre Baskerville', serif;
+  font-family: 'Rubik Glitch', 'cursive';
+  font-family: 'Ubuntu', sans-serif;
+  background-color: #161717;
+  color:white;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin:20px;
+}
+
+#buttons.buttons{
+  /*align-self: flex-start; Le indicamos solo a este elemento que este al inicio para no afectar a los demas dentro del flex*/
+  display: flex;
+  gap: 30px;
+}
+
+.btn-google{
+  background-color: #1A73E8;
+  border: none;
+  border-radius: 5px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px;
+  cursor: pointer;
+}
+.btn-google:hover{
+  opacity: 0.7;
+}
+.btn-google span{
+  color: white;
+  padding: 10px;
+  font-weight: 500;
+}
+.btn-google picture{
+  width: 36px;
+  height: 36px;
+  background-color: #161717;
+  display: flex;
+  border-radius: 2px;
+}
+
+
+.logo-google{
+  background-image: url(../img/logo-google.jpg);
+  background-size: 36px;
+  background-repeat: no-repeat;
+  z-index: 10;
+  width: 36px;
+  height: 36px;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-twitter{
+  border: none;
+  border-radius: 5px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px;
+  cursor: pointer;
+}
+
+.btn-twitter:hover{
+  opacity: 0.7;
+}
+
+.btn-twitter picture{
+  width: 36px;
+  height: 36px;
+  background-color: #161717;
+  display: flex;
+  border-radius: 2px;
+  border: none;
+}
+.logo-twitter{
+  background-image: url(../img/twitter-logo-2-1.png);
+  background-size: 31px;
+  background-repeat: no-repeat;
+  background-position: center;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-image: none;
+}
+
+.separador{
+   display: flex;
+   width: 40vw;
+   flex-direction: row;
+}
+
+.separador hr{
+  flex-grow: 1;
+  border: none;
+  border-top: 2px solid #ccc;
+}
+.separador span{
+  color: #8b8b8b;
+  margin: 0 3px 0 3px;
+  font-size: small;
+}
+ 
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 10px;
+  width: 40vw;
+}
+
+.section-input{
+  display: flex;
+  gap: 20px;
+}
+
+label{
+ width: 100%;  
+ gap: 5px;
+ display: flex;
+ flex-direction: column;
+}
+label span{
+  font-weight: 700;
+}
+
+
+label input{
+  width: 100%;  
+  background-color: #212121;
+  border: none;
+  border-radius: 6px;
+  padding: 5px 5px;
+  /*Animaciones y duracion*/
+  transition: background-color 0.3s, border 0.2s, box-shadow 0.1s;
+}
+
+label input:hover{
+  background-color: #454045;
+  border: 1px solid #f3f3f4;
+  box-shadow: 0 0 4px #eb50ff4f;
+}
+
+label input:focus{
+  background-color: #454045;
+  border: 1px solid #f3f3f4;
+  box-shadow: 0 0 4px #eb50ff4f;
+}
+
+.checkbox-label {
+  display: flex;
+  flex-direction: row;
+}
+
+.checkbox-label input[type="checkbox"]{
+  width: 10px;
+}
+.checkbox-label span{
+ font-weight: 400;
+}
+.submit-btn{
+  background-color: #EA4C89;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  font-weight: 500;
+  font-size: medium;
+  cursor: pointer;
+}
+
+.submit-btn:hover{
+
+ opacity: 75%;
+}
