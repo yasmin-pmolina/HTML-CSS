@@ -1,0 +1,143 @@
+body{
+   display: flex ;
+   flex-direction: row;
+   gap: 10px;
+   counter-increment: section;                   /* Incrementar el valor del contador de sección en 1 */
+   content: "Section " counter(section) ": ";    /* Muestra la palabra 'Sección', el valor del contador de sección y dos puntos antes del contenido de cada h3 */
+   
+}
+
+.padre{
+  width: 400px;
+  height: 600px;
+  background-color: aqua;
+}
+
+.hijo{
+  width: 50%;
+  height: 25%;
+  background-color: rgba(0, 170, 255, 0.565);
+}
+
+.hijo-2{
+  width: 50%;
+  height: 25%;
+  background-color: rgba(0, 255, 76, 0.482);
+  position: 100%;
+}
+
+.hijo-3{
+  width: 50%;
+  height: 25%;
+  background-color: rgba(30, 230, 77, 0.138);
+  position: 100%;
+}
+
+.hijo-4{
+  width: 50%;
+  height: 25%;
+  background-color: rgba(51, 205, 102, 0.837);
+  position: 100%;
+}
+
+/*
+  Disparador de la accion y el que recibe la accion se puede indicar elel hover
+*/
+
+.padre:hover .hijo{
+  transform: translate(100%);
+  background-color: rgb(255, 136, 0);
+
+}
+
+/*Cuando en la animación utilizamos el all quiere decir que todas
+ las propiedades van a van cambiar
+ pero por ejemplo podemos decir que la transición sea solo del color */
+.padre:hover .hijo-2{
+  transform: translate(100%);
+ transition: all 200ms;
+ background-color:  rgba(251, 0, 255, 0.565);
+ width: 10%;
+
+}
+
+.padre:hover .hijo-3{
+ transform: translate(100%);
+ transition: transform 2s;
+ background-color:  rgba(255, 0, 200, 0.809);
+}
+
+/*Cuando revisamos esto en las herramientas del navegador podemos editar
+ y probar un monton de funcionalidades, incluso hacer que rebote xd
+  en element en la propiedad click cubic-bezier y sustituimos el linear o ease-in
+  en la propiedad transition */
+.padre:hover .hijo-4{
+  transform: translate(100%);
+  background-color:  rgba(172, 72, 234, 0.505);
+  transition: transform 5s linear, background-color 5s ease-in;
+ }
+
+ /* 
+  el segundo valor tiempo en la propiedad transition implica un delay
+ transition: transform 5s linear 4s, por defecto 0s */
+
+
+ /*Animacion*/
+
+ .padre-animacion{
+  width: 400px;
+  height: 400px;
+  background-color: rgba(0, 225, 255, 0.445);
+  counter-reset: section;  /* Establece un contador llamado 'sección', y su valor inicial es 0. */
+}
+
+.hijo-animacion{
+  width: 50%;
+  height: 50%;
+  background-color: rgba(247, 247, 233, 0.81);
+  animation: traslacion 4s ease-in-out infinite forwards alternate; /*se mantiene la animacion */
+}
+ 
+
+.padre-animacion:hover .hijo-animacion{
+ /* transform: translate(100%);
+*/
+background-color:  rgba(72, 167, 234, 0.505);
+  /*animation: traslacion 3s; se realiza la animacion y regresa al estado original
+     animation: traslacion 3s ease-in-out  forwards;            se mantiene la animacion
+  */
+  animation-play-state: paused;
+ }
+
+ /*creamos la animacion traslacion*/
+
+ @keyframes traslacion {
+  0% {
+      background-color: beige;
+      transform: translateX(0%) translateY(0%);
+  }
+  25% {
+      transform: translateX(100%) translateY(0%);
+  }
+  50% {
+      transform: translateX(100%) translateY(100%);
+  }
+  75% {
+      transform: translateX(0%) translateY(100%);
+  }
+  100% {
+      background-color: darkorange;
+      transform: translateX(0%) translateY(0%);
+  }
+}
+ 
+ ol {
+  counter-reset: section;                /* Crea una nueva instancia del contador de sección con cada elemento ol */
+  list-style-type: none;
+}
+
+/*-----------------------*/
+li::before {
+  counter-increment: section;            /* Incrementa solo esta instancia del contador de sección  */
+  content: counters(section, ".") " ";   /* Combina los valores de todas las instancias del contador de sección, separados por un punto*/
+}
