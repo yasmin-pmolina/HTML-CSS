@@ -1,0 +1,48 @@
+.contenedor{
+  display: flex;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  min-height:  5rem;
+  background-color: yellow;
+  flex-direction: column;
+
+  /**
+    justify-content: center; funciona para filas
+    valores posibles 
+    center
+    end
+    space-between: distribuye el espacio sobrante entre los espacios entre los elementos
+    space-around: lo distibuye alrededor de los items
+    space-evenly: distribuye el espacio de forma igualitaria
+  */
+  justify-content: space-evenly;
+
+ /**
+  align-items: center; para el vertical
+  stretch: valor por defecto y estita los elementos para que ocupen toda la altura
+  baseline: al principio
+  end: al final
+ */
+  align-items: baseline;
+
+ /*
+  mantiene la forma descrita de la horientacion de los objetos, pero si 
+  es varia el tamaño de los elementos para mantenerlo
+ wrap: para preservar el tamaño de los elementos pasa a la siguiente linea
+
+ */
+
+  flex-wrap:  wrap;
+}
+.item{
+  padding: 0.25rem;
+  background-color: green;
+}
+.item-2 {
+  /*
+  align-self: ;
+  justify-self: unset;
+  */
+
+  align-self: stretch;
+}

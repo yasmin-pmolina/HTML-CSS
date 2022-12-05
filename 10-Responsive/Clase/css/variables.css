@@ -1,0 +1,19 @@
+:root{
+
+/*En el root se definen las variables*/
+--color-principal: rgba(36, 214, 218, 0.815);
+--ancho-principal: 260px;
+}
+
+.titulo{
+
+  color: var(--color-principal)
+}
+
+.footer{
+  color:  var(--color-principal)
+}
+.contenedor{
+
+  max-width: var(--ancho-principal);
+}

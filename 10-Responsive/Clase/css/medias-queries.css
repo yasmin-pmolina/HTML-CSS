@@ -1,0 +1,58 @@
+h1{
+  color: red;
+  font-size: 4rem;
+}
+
+p{
+
+  color: darkgreen;
+  font-size: 2rem;
+}
+/*
+Hace referencia a estilos que afentan solo dispositivos que se especifiquen
+@media all
+@media screen cuando se pinta la paginan en una pantalla
+@media print dispositivo impreso
+@media  speech Destinado a sintetizadores de voz
+*/
+@media screen{
+
+  h1{
+    color: blue;
+  }
+}
+/*Si el tamaño de lo que quiero imprimir es menor de 576
+quiero que utilices este estilo de aca*/
+@media screen and (max-width:576px){
+
+  h1{
+    color: yellow;
+  }
+}
+@media screen and (min-width:995px){
+
+  h1{
+    color: pink;
+  }
+}
+
+@media screen and (min-height:300px){
+
+  p{
+    color:  aquamarine;
+  }
+}
+
+@media (orientation: landscape) and (min-height: 350px){
+
+  p{
+    color:  darkgoldenrod;
+  }
+}
+/*media es por defecto all*/
+@media (min-width:1100px),(min-height:400px) {
+
+  p{
+    color:  aquamarine;
+  }
+}
