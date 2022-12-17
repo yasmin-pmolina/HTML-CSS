@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jumbotron</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+</head>
+<!--Pruebas de bootstarp-->
+<body>
+  <div class="container py-5">
+    <ul class="list-group">
+      <li class="list-group-item active">Item de lista desordenada 1 (activo)</li>
+      <li class="list-group-item">Item de lista desordenada 2</li>
+      <li class="list-group-item disabled">Item de lista desordenada 3(disable)</li>
+      <li class="list-group-item">Item de lista desordenada 4</li>
+    </ul>
+<!--
+  list-group-flush: quita los  bordes
+  mb-0 margin bottun 0
+
+-->
+    <ul class="list-group py-5 list-group-flush">
+      <a href="#" class="list-group-item list-group-item-action active">Item de lista desordenada 1 (activo)</a>
+      <a href="#" class="list-group-item list-group-item-action">Item de lista desordenada 2</a>
+      <a href="#" class="list-group-item list-group-item-action disabled">Item de lista desordenada 3(disable)</a>
+      <a href="#" class="list-group-item list-group-item-action">Item de lista desordenada 4</a>
+    </ul>
+
+
+    <ol class="list-group list-group-numbered py-5 list-group-flush">
+      <li href="#" class="list-group-item list-group-item-action active">Item de lista desordenada 1 (activo)</li>
+      <li href="#" class="list-group-item list-group-item-action">Item de lista desordenada 2</li>
+      <li href="#" class="list-group-item list-group-item-action disabled">Item de lista desordenada 3(disable)</li>
+      <li href="#" class="list-group-item list-group-item-action">Item de lista desordenada 4</li>
+    </ol>
+
+
+    <ul class="list-group">
+      <li class="list-group-item d-flex align-items-center justify-content-between">
+        <div>       
+           <p class="titulo mb-0"><strong>Primer titulo </strong> </p>
+          <p> Este es un parrafo del primer item</p></div>
+        <div>
+           bagde
+        </div>
+
+      </li>
+      <li class="list-group-item"></li>
+      <li class="list-group-item"></li>
+      <li class="list-group-item"></li>
+      <li class="list-group-item"></li>
+    </ul>
+
+    <!--
+ list-group-horizontal-md : es una lista horizontal hasta el md luego pasa a horizontal
+
+-->
+      <ul class="list-group mt-4 list-group-horizontal-md">
+        <li class="list-group-item"></li>
+        <li class="list-group-item list-group-item-warning"></li>
+        <li class="list-group-item list-group-item-info"></li>
+        <li class="list-group-item list-group-item-action"></li>
+      </ul>
+
+  </div>
+
+  
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</html>

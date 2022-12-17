@@ -8,10 +8,10 @@ Crea un nuevo documento HTML con el título "Sistema grid de Bootstrap"
 
     * Por defecto, cada elemento ocupará el ancho máximo
 
-    * Para viewports SM - cada fila contendrá 2 elementos
+    * Para viewports SM - cada fila contendrá 2 elementos   ≥576px
 
-    * Para viewports MD - cada fila contendrá 3 elementos
+    * Para viewports MD - cada fila contendrá 3 elementos 	≥768px
 
-    * Para viewports LG - cada fila contendrá 4 elementos
-
-    * Para viewports XL - cada fila contendrá 6 elementos
+    * Para viewports LG - cada fila contendrá 4 elementos 	≥992px
+ 
+    * Para viewports XL - cada fila contendrá 6 elementos  	≥1200px
